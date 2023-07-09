@@ -289,3 +289,32 @@ select:hover{
     }    
 
     }
+    @media (max-width:1200px){
+        .main__encabezado{
+            font-size: 30px;
+        }
+        .main__texto { 
+            font-size: 10px;
+            color: white;
+            font-weight: lighter;
+            text-transform: uppercase;
+        }
+        .grilla-padre{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "texto1 texto1"
+            "foto1 foto2"
+            "foto3 foto4"
+            "foto5 foto6";
+        }
+        
+        .main-multimedia iframe {
+            width: 750px !important;
+            height: 75vh !important;
+        }
+        
+        .main-multimedia img{
+            width: 750px !important;
+            height: 75vh !important;
+        }
+    }
