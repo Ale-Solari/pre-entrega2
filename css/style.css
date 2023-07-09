@@ -62,6 +62,7 @@
 .main__texto { grid-area: texto1;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    text-transform: uppercase;
     color: black;
     font-weight: bold;
     font-size: 15px;
@@ -217,7 +218,7 @@
 }
 
 .form-floating{
-    margin: 10px;
+    padding: 10;
 }
 
 .main-contacto .boton-enviar{
@@ -244,16 +245,11 @@ select:hover{
 /* MEDIA QUERIES */
 
 @media (max-width:576px){
-    .main-servicios img{
-        width: 200px;
-        height: 150px;
-        margin: 15px;
-        padding: 20px;
-    }
-    .main-servicios p {
-        text-align: justify;
+    .main__texto { 
         font-size: 10px;
-        border: 1px ridge rgb(105, 173, 226);
+        color: white;
+        font-weight: lighter;
+        text-transform: uppercase;
     }
     .grilla-padre{
         grid-template-columns: 1fr;
@@ -266,11 +262,28 @@ select:hover{
         "foto5"
         "foto6";
     }
-    .main__texto { 
-        font-size: 10px;
-        color: white;
-        font-weight: lighter;
-        text-transform: uppercase;
+    
+    .main-multimedia iframe {
+        width: 300px !important;
+        height: 50vh !important;
     }
+    
+    .main-multimedia img{
+        width: 300px !important;
+        height: 50vh !important;
+    }
+        
+    .main-servicios img{
+        width: 200px;
+        height: 150px;
+        margin: 15px;
+        padding: 20px;
+    }
+    .main-servicios p {
+        text-align: justify;
+        font-size: 10px;
+        border: 1px ridge rgb(105, 173, 226);
+    }
+    
 
     }
