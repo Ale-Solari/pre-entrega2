@@ -46,8 +46,8 @@
 .main{
     background-image: url(../recursos/Fotos/resize5.jpg);
     height: 700px;
-    padding: auto;
-    width: 100%;
+    padding: 25px;
+    
 }
 
 .main__encabezado{
@@ -245,6 +245,9 @@ select:hover{
 /* MEDIA QUERIES */
 
 @media (max-width:576px){
+    .main__encabezado{
+        font-size: 30px;
+    }
     .main__texto { 
         font-size: 10px;
         color: white;
@@ -265,12 +268,12 @@ select:hover{
     
     .main-multimedia iframe {
         width: 300px !important;
-        height: 50vh !important;
+        height: 25vh !important;
     }
     
     .main-multimedia img{
         width: 300px !important;
-        height: 50vh !important;
+        height: 25vh !important;
     }
         
     .main-servicios img{
@@ -283,7 +286,6 @@ select:hover{
         text-align: justify;
         font-size: 10px;
         border: 1px ridge rgb(105, 173, 226);
-    }
-    
+    }    
 
     }
